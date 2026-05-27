@@ -1,0 +1,1930 @@
+@font-face {
+    font-family: Reckless;
+    src: url(./fonts//RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family: Midnight;
+    src: url(./fonts//midnight-sans-rd-12-medium-trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    /* min height is used for giving minimum height to element*/
+    background-color: #FBF9EB;
+
+
+
+}
+
+nav {
+    width: 100%;
+    background-color: #FFFEFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Reckless;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    position: sticky;
+
+}
+
+nav i {
+    font-size: 2rem;
+    width: 33%;
+}
+
+nav .nav-part-1 {
+    display: flex;
+    gap: 1rem;
+    width: 33%;
+    display: none;
+
+}
+
+.nav-part-1 h3 {
+    font-weight: 300;
+}
+
+nav .nav-part-2 {
+    width: 20%;
+    height: auto;
+    display: flex;
+
+}
+
+.nav-part-2 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-part-3 {
+    display: flex;
+    width: 30%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.nav-part-3 h3 {
+    font-weight: 300;
+    display: none;
+}
+
+.nav-part-3 svg {
+    width: 30px;
+    height: 30px;
+
+}
+
+#section-1 {
+    width: 100%;
+    height: 85vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=720);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 3rem 0.5rem;
+    gap: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+#section-1 h1 {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    font-family: Reckless;
+    color: white;
+    font-weight: 500;
+
+}
+
+#section-1 p {
+    font-size: clamp(1.2rem, 1vw, 1rem);
+    font-family: Figtree;
+    font-weight: 400;
+    color: white;
+}
+
+#section-1 button {
+
+    padding: 1.2rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree;
+    border-radius: 1.2rem;
+    font-size: 1.1rem;
+}
+
+#section-2 {
+    width: 100%;
+    height: 100vh;
+    padding: 8rem 1rem;
+
+}
+
+#section-2 .section2-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Reckless;
+    text-align: center;
+}
+
+.section2-text h1 {
+    font-size: clamp(2.2rem, 8vw, 6rem);
+    font-weight: 300;
+    width: 80%;
+
+}
+
+
+#section-2 .btn-1 {
+    padding: 0.1rem 0.5rem;
+    font-size: 3rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #DAAEEA;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    rotate: -5deg;
+    letter-spacing: 2px;
+}
+
+#section-2 .card-container {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.card-top {
+    width: 90%;
+    height: 35vh;
+    background-color: #C1EE91;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.card-top-text {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+}
+
+.card-top-text button {
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: Midnight;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+
+    font-weight: 400;
+}
+
+.card-top-text span {
+    font-size: 1.2rem;
+    font-family: Reckless;
+}
+
+.card-top img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all ease 0.3s;
+}
+
+
+.card-btm-text {
+    background-color: #fff;
+    padding: 0.6rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    font-family: Reckless;
+    font-size: 1.2rem;
+}
+
+.card-top:hover img {
+    scale: 1.1;
+}
+
+.card-btm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-family: Reckless;
+    align-items: start;
+}
+
+.card-btm h1 {
+    font-family: 0.3rem;
+    font-weight: 100;
+}
+
+.card-btm h3 {
+    font-family: 0.3rem;
+    font-weight: 100;
+}
+
+.card-btm p {
+    font-weight: 100;
+    opacity: 0.5;
+    width: 90%;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm-btn {
+
+    padding: 1.2rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree;
+    border-radius: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 150px;
+
+}
+
+/* SECTION2 */
+
+.line {
+    border: 1px solid black;
+    /* margin-bottom: 150px; */
+    margin-left: -129px;
+    width: 110.4%;
+}
+
+
+.tea-discover-wrapper {
+    width: 100%;
+    /* padding:80px 120px; */
+    margin-top: -180px;
+}
+
+.tea-discover-container {
+    max-width: 1000px;
+    margin: 870px 0 222px 214px;
+    /* margin-left: 214px;
+    margin-bottom: 222px; */
+}
+
+.tea-discover-badge {
+    display: inline-block;
+    background: #ef7b2d;
+    color: #111;
+    font-size: 34px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transform: rotate(-1.5deg);
+    margin-bottom: 28px;
+    line-height: 1;
+}
+
+.tea-discover-heading {
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 100;
+    max-width: 980px;
+    margin-bottom: 48px;
+}
+
+.tea-discover-heading em {
+    font-style: italic;
+}
+
+.tea-search-box {
+    width: 380px;
+    height: 78px;
+    border: 1.8px solid #8b867d;
+    border-radius: 14px;
+    background: transparent;
+    padding: 0 34px;
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    outline: none;
+    color: #444;
+    margin-bottom: 130px;
+}
+
+.tea-search-box::placeholder {
+    color: #b0aaa0;
+}
+
+.tea-vibe-title {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    color: #2d2d2d;
+    margin-top: -2px;
+}
+
+.tea-tag-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 1200px;
+}
+
+.tea-tag {
+    padding: 14px 22px;
+    border: 1.5px solid #7d8797;
+    border-radius: 14px;
+    background: #dce8fb;
+    font-size: 23px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.tea-tag:hover {
+    transform: translateY(-3px);
+    background: #cadcf8;
+}
+
+
+/* SECTION3 */
+
+.tea-origin-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* DARK OVERLAY */
+
+.tea-origin-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   TOP RIGHT SVG
+========================================= */
+
+.tea-origin-top-svg {
+    position: absolute;
+    top: 44px;
+    right: 100px;
+    width: 130px;
+    z-index: 3;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.tea-origin-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 950px;
+
+    padding: 80px 20px;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+
+.tea-origin-label {
+    display: inline-block;
+
+    background: #819deb;
+    color: #111;
+
+    font-family: sans-serif;
+    font-size: 33px;
+    font-weight: 900;
+
+    padding: 0px 10px;
+
+    border-radius: 4px;
+
+    margin-bottom: 222px;
+    margin-top: 110px;
+
+   transform: rotate(-2deg) scaleY(1.6);
+    
+
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.tea-origin-heading {
+    font-size: 110px;
+    line-height: 0.92;
+
+    font-weight: 900;
+    font-family: sans-serif;
+
+    color: white;
+transform: scaleY(1.6);
+    margin-bottom: 400px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.tea-origin-text {
+    /* max-width: 1000px; */
+
+    margin: 0 auto 120px auto;
+
+    color: white;
+
+    font-size: 33px;
+    line-height: 1.35;
+
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* =========================================
+   ICONS
+========================================= */
+
+.tea-origin-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 94px;
+
+    margin-bottom: 50px;
+}
+
+.tea-origin-icon-item img {
+    width: 100px;
+    height: auto;
+}
+
+.tea-origin-icon-item p {
+    color: white;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.tea-origin-btn {
+    border: none;
+    background: white;
+
+    padding: 12px 50px;
+
+    border-radius: 999px;
+
+    font-size: 22px;
+    cursor: pointer;
+margin-top: 80px;
+    transition: 0.3s ease;
+}
+
+.tea-origin-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* SECTION-4 */
+
+/* =========================================
+   REVIEW SECTION
+========================================= */
+
+.tea-review-section{
+    width:100%;
+    padding:120px 70px;
+    background:#f6f3e8;
+}
+
+/* =========================================
+   TOP AREA
+========================================= */
+
+.tea-review-top{
+    max-width:1100px;
+    margin:0 auto 90px auto;
+}
+
+/* LABEL */
+
+.tea-review-label{
+    display:inline-block;
+
+    background:#6ec51e;
+    color:#111;
+
+    font-family:sans-serif;
+    font-size:34px;
+    font-weight:900;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    transform:rotate(-2deg) scaleY(1.1);
+
+    margin-bottom:30px;
+}
+
+/* HEADING */
+
+.tea-review-heading{
+    font-size:76px;
+    line-height:1.08;
+    font-weight:300;
+    color:#111;
+}
+
+.tea-review-heading em{
+    font-style:italic;
+}
+
+/* =========================================
+   REVIEW GRID
+========================================= */
+
+.tea-review-grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:8px;
+    margin-left: -44px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.tea-review-card{
+height:400px;
+width: 270px;
+    border:1.5px solid #6e6a61;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    overflow:hidden;
+}
+
+/* CARD COLORS */
+
+.tea-peach-card{
+    background:#e9a683;
+}
+
+.tea-green-card{
+    background:#a8d472;
+}
+
+.tea-yellow-card{
+    background:#f1cc61;
+}
+
+.tea-lightgreen-card{
+    background:#a8d96c;
+}
+
+.tea-purple-card{
+    background:#ccb6d8;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.tea-review-content{
+    padding:70px 26px 30px;
+    text-align:center;
+}
+
+.tea-review-text{
+    font-size:17px;
+    line-height:1.35;
+    color:#2a241e;
+    margin-bottom:22px;
+}
+
+.tea-review-author{
+    font-size:18px;
+    font-family:sans-serif;
+    opacity:0.6;
+}
+
+/* =========================================
+   PRODUCT STRIP
+========================================= */
+
+.tea-product-strip{
+    margin:18px;
+
+    border:1.5px solid #6a665f;
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    min-height:77px;
+}
+
+/* INNER COLORS */
+
+.tea-peach-card .tea-product-strip{
+    background:#ef6f3f;
+}
+
+.tea-green-card .tea-product-strip{
+    background:#79c31f;
+}
+
+.tea-yellow-card .tea-product-strip{
+    background:#ffbe00;
+}
+
+.tea-lightgreen-card .tea-product-strip{
+    background:#8ecc39;
+}
+
+.tea-purple-card .tea-product-strip{
+    background:#bb89d6;
+}
+
+/* IMAGE */
+
+.tea-product-left{
+    width:80px;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-right:1.5px solid rgba(0,0,0,0.3);
+}
+
+.tea-product-left img{
+    width:48px;
+}
+
+/* PRODUCT NAME */
+
+.tea-product-name{
+    flex:1;
+
+    padding:0 14px;
+
+    font-size:11px;
+    line-height:1.15;
+
+    font-family:sans-serif;
+    font-weight:400;
+
+    color:#222;
+}
+
+/* SHOP BUTTON */
+
+.tea-shop-btn{
+    margin-right:12px;
+
+    border:none;
+    background:#f5f5f5;
+
+    width:74px;
+    height:54px;
+
+    border-radius:999px;
+
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* =========================================
+   PARTNER SECTION
+========================================= */
+
+.tea-partner-section{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    overflow:hidden;
+}
+
+/* =========================================
+   LEFT IMAGE SIDE
+========================================= */
+
+.tea-partner-image-area{
+    width:50%;
+    position:relative;
+}
+
+.tea-partner-image{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    display:block;
+}
+
+/* =========================================
+   RIGHT CONTENT SIDE
+========================================= */
+
+.tea-partner-content-area{
+    width:50%;
+
+    background:#2f2b68;
+
+    display:flex;
+    align-items:center;
+}
+
+.tea-partner-content{
+    max-width:620px;
+
+    padding:80px 60px;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.tea-partner-heading{
+    font-size:82px;
+    line-height:1.03;
+
+    color:#f3f1eb;
+
+    font-weight:300;
+
+    margin-bottom:42px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.tea-partner-text{
+    font-size:28px;
+    line-height:1.35;
+
+    color:#f3f1eb;
+
+    max-width:520px;
+
+    margin-bottom:44px;
+
+    font-family:sans-serif;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.tea-partner-btn{
+    border:none;
+
+    background:#f4f1eb;
+    color:#222;
+
+    padding:16px 40px;
+
+    border-radius:999px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.tea-partner-btn:hover{
+    transform:translateY(-3px);
+}
+
+.latte-section{
+      width:100%;
+      min-height:100vh;
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* TOP SVG / BG AREA */
+    .top-strip{
+      width:100%;
+      height:60px;
+      position:relative;
+      background:#2d2b69;
+      overflow:hidden;
+    }
+
+    
+
+    /* HERO TOP */
+    .hero-top{
+      background:#9e6428;
+      padding:80px 20px 170px;
+      text-align:center;
+      position:relative;
+    }
+
+    .label{
+      display:inline-block;
+      padding:8px 14px;
+      background:#f7d2a6;
+      border:2px solid #5d3a18;
+      border-radius:8px;
+      font-weight:900;
+      font-size:18px;
+      color:#111;
+      transform:rotate(-2deg);
+      margin-bottom:25px;
+    }
+
+    .hero-top h1{
+      color:#fff;
+      font-size:78px;
+      line-height:1;
+      font-weight:900;
+      text-transform:uppercase;
+      max-width:1000px;
+      margin:auto;
+      letter-spacing:1px;
+    }
+
+    .sub{
+      color:#fff;
+      margin-top:24px;
+      font-size:18px;
+      font-weight:600;
+      letter-spacing:2px;
+    }
+
+    /* TOP RIGHT BADGE */
+    .badge{
+      position:absolute;
+      top:-25px;
+      right:50px;
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      background:#d7b7d9;
+      border:3px solid #53314e;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:18px;
+      font-size:14px;
+      font-weight:700;
+      color:#222;
+      transform:rotate(18deg);
+    }
+
+    /* PRODUCT CARD */
+    .product-card{
+      width:95%;
+      
+      margin:-90px auto 30px;
+      background:#efc18e;
+      border:2px solid #5b3b1e;
+      border-radius:20px;
+      height:420px;
+      position:relative;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:80px;
+      padding:60px 90px;
+    }
+
+    /* ARROWS */
+    .arrow{
+      position:absolute;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      background:#f3f3f3;
+      border:2px solid #777;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:42px;
+      color:#444;
+      cursor:pointer;
+      top:50%;
+      transform:translateY(-50%);
+    }
+
+    .arrow.left{
+      left:35px;
+    }
+
+    .arrow.right{
+      right:35px;
+    }
+
+    /* PRODUCT IMAGE */
+    .product-image{
+      flex:1;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .product-image img{
+      width:430px;
+      max-width:100%;
+      object-fit:contain;
+      filter:drop-shadow(0 30px 12px rgba(0,0,0,0.15));
+      margin-top: -180px;
+    }
+
+    /* CONTENT */
+    .content{
+      flex:1;
+      max-width:500px;
+    }
+
+    .content .mini{
+      display:inline-block;
+      padding:3px 9px;
+      background:#f0a64a;
+      border:1px solid #161615;
+      border-radius:8px;
+      font-size:20px;
+      font-weight:900;
+      margin-bottom:20px;
+      margin-top: 50px;
+       transform: rotate(-2deg) scaleY(1.6);
+    }
+
+    .content h2{
+      font-size:60px;
+      line-height:0.95;
+      color:#1a1717;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight:lighter;
+      margin-bottom:22px;
+    }
+
+    .content p{
+      font-size:15px;
+      line-height:1.5;
+      color:#2f2f2f;
+      margin-bottom:10px;
+    }
+
+    .shop-btn{
+      padding:10px 18px;
+      border-radius:40px;
+      border:2px solid #777;
+      background:#f4f4f4;
+      font-size:20px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .shop-btn:hover{
+      background:#111;
+      color:#fff;
+    }
+
+
+        .journal-section{
+      width:100%;
+      padding:40px 0 70px;
+      position:relative;
+    }
+
+    /* TOP CONTENT */
+    .top-content{
+      width:70%;
+      margin:0 auto 70px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#f4b500;
+      color:#111;
+      padding:10px 18px;
+      border-radius:6px;
+      border:2px solid #4a3d00;
+      font-weight:900;
+      font-size:24px;
+      transform:rotate(-2deg);
+      margin-bottom:28px;
+    }
+
+    .top-content h1{
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size:46px;
+      line-height:1.1;
+      color:#1d1a1a;
+      font-weight:100;
+      max-width:1000px;
+    }
+
+    .top-content h1 em{
+      font-style:italic;
+    }
+
+    /* CARDS WRAPPER */
+    .cards-wrapper{
+      position:relative;
+      width:100%;
+      overflow:hidden;
+      padding-left:35px;
+    }
+
+    .cards{
+      display:flex;
+      gap:18px;
+      overflow-x:auto;
+      scroll-behavior:smooth;
+      padding-bottom:10px;
+    }
+
+    .cards::-webkit-scrollbar{
+      display:none;
+    }
+
+    /* CARD */
+    .car{
+      min-width:300px;
+      background:#b9cdeb;
+      border:2px solid #474747;
+      border-radius:14px;
+      overflow:hidden;
+      flex-shrink:0;
+    }
+
+    .car-top{
+      height:300px;
+      background:#2f2967;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .circle{
+      width:270px;
+      height:270px;
+      border-radius:50%;
+      background:#dbe8bf;
+      border:4px solid #222;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .circle img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* LABEL */
+    .card-label{
+      position:absolute;
+      top:12px;
+      left:12px;
+      background:#f5f5f5;
+      border:2px solid #444;
+      border-radius:5px;
+      padding:5px 10px;
+      font-size:14px;
+      font-weight:900;
+      color:#222;
+    }
+
+    /* CARD TEXT */
+    .card-bottom{
+      padding:16px 14px 18px;
+      background:#b9cdeb;
+      min-height:85px;
+      display:flex;
+      align-items:flex-start;
+    }
+
+    .card-bottom h3{
+      font-size:18px;
+      line-height:1.4;
+      color:#222;
+      font-weight:500;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    /* RIGHT ARROW */
+    .slider-arrow{
+      position:absolute;
+      right:22px;
+      top:50%;
+      transform:translateY(-50%);
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      background:#f5f5f5;
+      border:2px solid #777;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:40px;
+      cursor:pointer;
+      z-index:10;
+    }
+
+    /* DOTS */
+    .dots{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      margin-top:38px;
+      margin-bottom:40px;
+    }
+
+    .dot{
+      width:42px;
+      height:3px;
+      background:#c5c1b8;
+      border-radius:50px;
+    }
+
+    .dot.active{
+      background:#1c1c1c;
+    }
+
+    /* BUTTON */
+    .btn-wrap{
+      display:flex;
+      justify-content:center;
+    }
+
+    .journal-btn{
+      background:#2f2967;
+      color:#fff;
+      border:none;
+      border-radius:50px;
+      padding:20px 55px;
+      font-size:24px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .journal-btn:hover{
+      transform:translateY(-2px);
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1100px){
+
+      .top-content{
+        width:90%;
+      }
+
+      .top-content h1{
+        font-size:54px;
+      }
+    }
+
+    @media(max-width:700px){
+
+      .top-content h1{
+        font-size:38px;
+      }
+
+      .tag{
+        font-size:18px;
+      }
+
+      .card{
+        min-width:260px;
+      }
+
+      .card-top{
+        height:260px;
+      }
+
+      .circle{
+        width:220px;
+        height:220px;
+      }
+
+      .journal-btn{
+        font-size:18px;
+        padding:16px 38px;
+      }
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1100px){
+
+      .hero-top h1{
+        font-size:58px;
+      }
+
+      .product-card{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+        padding:80px 30px;
+      }
+
+      .content h2{
+        font-size:60px;
+      }
+    }
+
+    @media(max-width:700px){
+
+      .hero-top{
+        padding:70px 20px 140px;
+      }
+
+      .hero-top h1{
+        font-size:38px;
+      }
+
+      .content h2{
+        font-size:46px;
+      }
+
+      .content p{
+        font-size:17px;
+      }
+
+      .arrow{
+        width:50px;
+        height:50px;
+        font-size:32px;
+      }
+
+      .badge{
+        width:100px;
+        height:100px;
+        font-size:10px;
+        right:15px;
+      }
+    }
+
+
+
+/* =========================================
+   LARGE LAPTOP
+========================================= */
+
+@media (max-width:1400px){
+
+    .tea-partner-heading{
+        font-size:68px;
+    }
+
+    .tea-partner-text{
+        font-size:24px;
+    }
+}
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width:1200px){
+
+    .tea-partner-heading{
+        font-size:58px;
+    }
+
+    .tea-partner-text{
+        font-size:22px;
+    }
+
+    .tea-partner-content{
+        padding:70px 50px;
+    }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:992px){
+
+    .tea-partner-section{
+        flex-direction:column;
+    }
+
+    .tea-partner-image-area,
+    .tea-partner-content-area{
+        width:100%;
+    }
+
+    .tea-partner-image-area{
+        height:500px;
+    }
+
+    .tea-partner-content-area{
+        min-height:500px;
+    }
+
+    .tea-partner-heading{
+        font-size:52px;
+    }
+
+    .tea-partner-text{
+        font-size:20px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px){
+
+    .tea-partner-image-area{
+        height:380px;
+    }
+
+    .tea-partner-content{
+        padding:60px 24px;
+    }
+
+    .tea-partner-heading{
+        font-size:42px;
+        line-height:1.08;
+        margin-bottom:28px;
+    }
+
+    .tea-partner-text{
+        font-size:18px;
+        line-height:1.45;
+        margin-bottom:34px;
+    }
+
+    .tea-partner-btn{
+        padding:14px 34px;
+        font-size:17px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width:480px){
+
+    .tea-partner-image-area{
+        height:320px;
+    }
+
+    .tea-partner-heading{
+        font-size:34px;
+    }
+
+    .tea-partner-text{
+        font-size:16px;
+    }
+
+    .tea-partner-btn{
+        width:100%;
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1400px){
+
+    .tea-review-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width:992px){
+
+    .tea-review-section{
+        padding:90px 30px;
+    }
+
+    .tea-review-heading{
+        font-size:52px;
+    }
+
+    .tea-review-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .tea-review-card{
+        min-height:560px;
+    }
+
+    .tea-review-text{
+        font-size:26px;
+    }
+}
+
+@media (max-width:768px){
+
+    .tea-review-heading{
+        font-size:40px;
+        line-height:1.2;
+    }
+
+    .tea-review-label{
+        font-size:24px;
+    }
+
+    .tea-review-grid{
+        grid-template-columns:1fr;
+    }
+
+    .tea-review-card{
+        min-height:auto;
+    }
+
+    .tea-review-content{
+        padding:50px 22px 24px;
+    }
+
+    .tea-review-text{
+        font-size:22px;
+    }
+
+    .tea-product-strip{
+        min-height:80px;
+    }
+}
+
+@media (max-width:480px){
+
+    .tea-review-section{
+        padding:70px 16px;
+    }
+
+    .tea-review-heading{
+        font-size:32px;
+    }
+
+    .tea-review-text{
+        font-size:18px;
+    }
+
+    .tea-product-name{
+        font-size:12px;
+    }
+
+    .tea-shop-btn{
+        width:62px;
+        height:46px;
+        font-size:14px;
+    }
+}
+
+@media (min-width:768px) {}
+
+@media (min-width:1024px) {
+
+    nav {
+        width: 100%;
+        background-color: #FFFEFB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Reckless;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        position: sticky;
+
+    }
+
+    nav .nav-part-1 {
+        display: flex;
+        gap: 1rem;
+        width: 30%;
+
+
+
+    }
+
+    nav i {
+        display: none;
+    }
+
+    .nav-part-1 h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    nav .nav-part-2 {
+        width: 5%;
+
+        display: flex;
+
+    }
+
+    .nav-part-3 {
+        display: flex;
+        width: 40%;
+        gap: 1rem;
+        justify-content: end;
+        align-items: end;
+
+    }
+
+    .nav-part-3 h3 {
+        font-weight: 300;
+        display: block;
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    #section-1 {
+        width: 100%;
+        text-align: start;
+        padding: 3rem 2rem;
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=2250.0);
+        background-size: cover;
+    }
+
+    #section-1 h1 {
+        width: 20%;
+    }
+
+    #section-1 p {
+        width: 20%;
+    }
+
+    #section-1 button {
+        width: fit-content;
+        padding: 1rem 4rem;
+        border-radius: 1.2rem, ;
+    }
+
+    #section-2 .btn-1 {
+        display: none;
+    }
+
+    .section2-text h1 {
+        width: 50%;
+
+    }
+
+    .card-container {
+        margin-top: 8rem;
+    }
+
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   MATCHING THE PROVIDED SCREENSHOT
+========================================= */
+
+@media (max-width: 480px) {
+
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tea-discover-wrapper {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: -40px;
+    }
+
+    .tea-discover-container {
+        width: 100%;
+        margin-top: 517px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* =========================
+       DISCOVER BADGE
+    ========================= */
+
+    .tea-discover-badge {
+        font-size: 20px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        margin-bottom: 26px;
+    }
+
+    /* =========================
+       HEADING
+    ========================= */
+
+    .tea-discover-heading {
+        font-size: 33px;
+        line-height: 1.22;
+        max-width: 100%;
+        margin-bottom: 42px;
+        font-weight: 100;
+    }
+
+    .tea-discover-heading em {
+        display: block;
+    }
+
+    /* =========================
+       SEARCH BOX
+    ========================= */
+
+    .tea-search-box {
+        width: 100%;
+        height: 96px;
+        border-radius: 18px;
+        font-size: 24px;
+        padding: 0 26px;
+        margin-bottom: 40px;
+    }
+
+    .tea-search-box::placeholder {
+        font-size: 24px;
+    }
+
+    /* =========================
+       SMALL TITLE
+    ========================= */
+
+    .tea-vibe-title {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        margin-bottom: 22px;
+    }
+
+    /* =========================
+       TAG WRAPPER
+    ========================= */
+
+    .tea-tag-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    /* =========================
+       TAGS
+    ========================= */
+
+    .tea-tag {
+        width: fit-content;
+        max-width: 100%;
+        padding: 12px 22px;
+        font-size: 28px;
+        border-radius: 16px;
+        line-height: 1.05;
+        white-space: nowrap;
+    }
+
+    .tea-tag:hover {
+        transform: none;
+    }
+}
+
+@media (max-width:1400px) {
+
+    .tea-origin-heading {
+        font-size: 90px;
+    }
+
+    .tea-origin-text {
+        font-size: 24px;
+    }
+}
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width:1200px) {
+
+    .tea-origin-heading {
+        font-size: 72px;
+    }
+
+    .tea-origin-text {
+        font-size: 22px;
+        max-width: 680px;
+    }
+
+    .tea-origin-icon-item img {
+        width: 64px;
+    }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:992px) {
+
+    .tea-origin-section {
+        min-height: 900px;
+    }
+
+    .tea-origin-heading {
+        font-size: 58px;
+    }
+
+    .tea-origin-text {
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+
+    .tea-origin-icons {
+        gap: 24px;
+    }
+
+    .tea-origin-icon-item img {
+        width: 58px;
+    }
+
+    .tea-origin-top-svg {
+        width: 68px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px) {
+
+    .tea-origin-section {
+        min-height: 760px;
+    }
+
+    .tea-origin-content {
+        padding: 60px 18px;
+    }
+
+    .tea-origin-label {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .tea-origin-heading {
+        font-size: 48px;
+        line-height: 0.95;
+        margin-bottom: 42px;
+    }
+
+    .tea-origin-text {
+        font-size: 16px;
+        line-height: 1.45;
+        margin-bottom: 70px;
+        max-width: 90%;
+    }
+
+    .tea-origin-icons {
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .tea-origin-icon-item img {
+        width: 48px;
+    }
+
+    .tea-origin-btn {
+        padding: 10px 28px;
+        font-size: 13px;
+    }
+
+    .tea-origin-top-svg {
+        width: 58px;
+        top: 18px;
+        right: 18px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width:480px) {
+
+    .tea-origin-section {
+        min-height: 680px;
+    }
+
+    .tea-origin-heading {
+        font-size: 38px;
+    }
+
+    .tea-origin-text {
+        font-size: 15px;
+        max-width: 95%;
+    }
+
+    .tea-origin-icons {
+        gap: 14px;
+    }
+
+    .tea-origin-icon-item img {
+        width: 42px;
+    }
+
+    .tea-origin-top-svg {
+        width: 48px;
+    }
+}
